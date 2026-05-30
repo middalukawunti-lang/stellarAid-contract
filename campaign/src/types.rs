@@ -131,6 +131,8 @@ pub struct CampaignData {
     pub status: CampaignStatus,
     pub accepted_assets: Vec<StellarAsset>,
     pub milestone_count: u32,
+    /// Issue #192 – minimum donation amount; set to 0 to disable enforcement
+    pub min_donation_amount: i128,
 }
 
 // ── Issue #168 – MilestoneData struct ────────────────────────────────────────
